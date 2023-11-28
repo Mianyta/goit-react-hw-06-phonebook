@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { List } from './ContactList.styled';
 import { useSelector, useDispatch } from 'react-redux';
-
+import { deleteContact } from 'redux/contactSlice';
 
 export const ContactList = () => {
   const contacts = useSelector(state => state.contacts.contacts);

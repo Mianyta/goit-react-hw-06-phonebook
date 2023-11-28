@@ -12,15 +12,7 @@ const contactSlice = createSlice({
   // будемо перераховувати методи які в майбутньому будемо використовувати
   reducers: {
     addContacts: {
-      prepare: ({ name, number }) => {
-        return {
-          payload: {
-            id: nanoid(),
-            name,
-            number,
-          },
-        };
-      },
+     
       reducer: (state, action) => {
         state.contacts.push(action.payload);
       },

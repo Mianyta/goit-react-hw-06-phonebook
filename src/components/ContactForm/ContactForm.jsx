@@ -25,7 +25,7 @@ export const ContactForm = () => {
       return;
     }
 
-    dispatch(addContacts({ id: nanoid(5), name: name, number: number }));
+    dispatch(addContacts({ id: nanoid(5),  name, number: number }));
   };
 
   const changeInput = input => {
